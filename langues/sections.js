@@ -21,8 +21,14 @@ console.log("Hello to anyone checking the console! Do not worry, bugs will not b
 console.error("hello im a bug OH NO THE DEVS ARE DEBUGGING BY PRINTING VARIABLES AAAAAAH")
 console.log("hehehe") 
 
-function anim(targ) {
+function anim(targ, from) {
     target = targ;
+    if (from == 1) {
+        showSection2();
+    }
+    else {
+        hideSection2();
+    }
     elem = document.getElementById("slider");
     direction = Math.sign(target - pos);
     clearInterval(id);
@@ -315,4 +321,12 @@ function downExpand10() {
         collapseHeight[10] = heights[10];
         document.getElementsByClassName("collapse")[10].style.setProperty("height", collapseHeight[10] + "px");
     }
+}
+
+function hideSection2() {
+    document.getElementsByClassName("horizontalDiv")[1].children[0].children[1].style.display = "none"
+}
+
+function showSection2() {
+    document.getElementsByClassName("horizontalDiv")[1].children[0].children[1].style.display = "block"
 }
