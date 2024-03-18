@@ -3,12 +3,14 @@ body {
     overflow: hidden;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100lvh;
+    height: 100dvh;
     flex-direction: column;
 }
 
 html {
     overflow: hidden;
+    height: 100dvh;
+    width: 100lvw;
 }
 
 .horizontalDiv {
@@ -40,7 +42,7 @@ img {
 
 #slider {
     display: flex;
-    height: calc(100lvh - 40px)
+    height: calc(100dvh - 40px)
 }
 
 #buttons {
@@ -133,7 +135,7 @@ h1 {
 #rightDiv {
     width: 60%;
     overflow-y: scroll;
-    height: calc(100lvh - 40px);
+    height: calc(100dvh - 40px);
     position: sticky;
     top: 0;
 }
