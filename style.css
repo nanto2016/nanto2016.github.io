@@ -108,7 +108,8 @@ h1 {
 
 .horizCollapse {
     flex-grow: 0;
-    margin-right: 4px;
+    padding-left: 4px;
+    margin-left: 4px;
 }
 
 #schoolLink {
