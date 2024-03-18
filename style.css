@@ -5,8 +5,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100dvh;
     flex-direction: column;
+    position: relative;
 }
-
 .horizontalDiv {
     margin: 0px;
     width: 100svw;
