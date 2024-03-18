@@ -1,5 +1,5 @@
 body {
-    width: 100svw;
+    width: 100lvw;
     overflow: hidden;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,7 +13,7 @@ html {
 
 .horizontalDiv {
     margin: 0px;
-    width: 100svw;
+    width: 100lvw;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -23,9 +23,9 @@ html {
 .inBetweenDiv {
     display: flex;
     flex-direction: column;
-    width: 25svw;
-    margin-left: 2.5svw;
-    margin-right: 2.5svw;
+    width: 25lvw;
+    margin-left: 2.5lvw;
+    margin-right: 2.5lvw;
     height: 100%;
     flex-shrink: 0;
     justify-content: space-between;
@@ -45,7 +45,7 @@ img {
 
 #buttons {
     display: flex;
-    width: 100svw;
+    width: 100lvw;
     height: 40px;
     background-color: darkorange;
     align-items: center;
