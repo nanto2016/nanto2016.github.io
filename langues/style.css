@@ -48,9 +48,10 @@ img {
 #buttons {
     display: flex;
     width: 100vw;
-    height: 40px;
+    min-height: 40px;
     background-color: darkorange;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .collapsible {
@@ -94,6 +95,8 @@ button > p {
     height: 20px;
     align-items: center;
     display: flex;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 h1 {
@@ -110,16 +113,18 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .horizCollapse {
     flex-grow: 0;
     padding-left: 4px;
     margin-left: 4px;
+    max-width: 400px;
 }
 
 #schoolLink {
-    height: 80%;
+    height: 30px;
     margin-left: 8px;
 }
 
