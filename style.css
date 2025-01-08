@@ -1,0 +1,199 @@
+@font-face {
+	font-family: "Plot Holes";
+	src: url("/images/PlotHolesBB-Regular.otf");
+}
+
+@keyframes in {
+	0% {left: 0;}
+	100% {left: -100lvw;}
+}
+
+@keyframes out {
+	0% {left: 100lvw;}
+	100% {left: 0;}
+}
+
+@keyframes reverse_in {
+	0% {left: 0;}
+	100% {left: 100lvw;}
+}
+
+@keyframes reverse_out {
+	0% {left: -100lvw;}
+	100% {left: 0;}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url("/images/paper.png");
+	background-size: cover;
+	margin: 0;
+	font-family: "Plot Holes", sans-serif;
+	font-size: calc(15px + 0.390625lvw);
+}
+
+a {
+	cursor: pointer;
+}
+
+#navbar {
+	background-image: linear-gradient(white 0%, white 75%, rgba(255, 255, 255, 0.9) 100%);
+	background-repeat: no-repeat;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	min-height: 10svh;
+	padding: 1svh;
+	border: solid;
+	border-width: 0 0 1px 0;
+	border-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.section_link {
+	align-self: center;
+	border: outset;
+	border-width: 1px;
+	border-radius: 4px;
+	padding: 4px;
+	margin-left: 8px;
+	margin-top: 4px;
+	background-color: white;
+}
+
+header {
+	display: block;
+}
+
+@media (orientation: portrait) {
+	header {
+		display: none;
+	}
+}
+
+header > img {
+	height: 8svh;
+	width: auto;
+	flex-grow: 0;
+}
+
+.button_with_arrow {
+	display: flex;
+	width: fit-content;
+	align-self: center;
+	border: outset;
+	border-width: 2px;
+	border-radius: 4px;
+	padding: 4px;
+	margin-left: 8px;
+	margin-top: 4px;
+	background-color: white;
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	gap: 8px;
+}
+
+.button_with_arrow:hover {
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	gap: 32px;
+}
+
+.arrow {
+	text-align: end;
+	margin: 0 4px;
+}
+
+.content_container {
+	margin: 32px;
+	background-color: white;
+	border: solid;
+	border-color: grey;
+	border-width: 2px;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.grid_container {
+	margin: 32px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(calc(140px + 36%), 1fr));
+	gap: 48px;
+}
+
+.grid_item {
+	padding: 8px 16px;
+}
+
+.transition {
+	position: fixed;
+	top: 0;
+	left: 100lvw;
+	transform: skew(0deg);
+	height: 100lvh;
+	background-color: black;
+	width: 100lvw;
+	z-index: 1;
+}
+
+.transition_in {
+	left: -100lvw;
+	animation-name: in;
+	animation-duration: 500ms;
+}
+
+.transition_reverse_in {
+	left: 100lvw;
+	animation-name: reverse_in;
+	animation-duration: 500ms;
+}
+
+.transition_out {
+	left: 0;
+	animation-name: out;
+	animation-duration: 500ms;
+}
+
+.transition_reverse_out {
+	left: 0;
+	animation-name: reverse_out;
+	animation-duration: 500ms;
+}
+
+#game_description {
+	background-color: dodgerblue;
+	box-shadow: 0 0 8px 8px dodgerblue;
+}
+
+#robot_description {
+	background-color: brown;
+	box-shadow: 0 0 8px 8px brown;
+}
+
+#programming_description {
+	background-color: green;
+	box-shadow: 0 0 8px 8px green;
+}
+
+#kiosk_description {
+	background-color: coral;
+	box-shadow: 0 0 8px 8px coral;
+}
+
+#video_description {
+	background-color: crimson;
+	box-shadow: 0 0 8px 8px crimson;
+}
+
+#tutorial_description {
+	background-color: orchid;
+	box-shadow: 0 0 8px 8px orchid;
+}
+
+#website_description {
+	background-color: cornflowerblue;
+	box-shadow: 0 0 8px 8px cornflowerblue;
+}

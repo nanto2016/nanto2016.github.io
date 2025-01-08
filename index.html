@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Langues/Style.css">
-    <title>Bienvenue/Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="images/ST-EX.png">
+	<link rel="stylesheet" href="home page style.css">
+	<title>St-Ex CRC</title>
 </head>
-<body style="background-color: rgba(255, 0, 0, 0.8);">
-        <p>
-            <a href="Langues/crc FR.html" target="_blank">Français</a>
-            /
-            <a href="Langues/crc En.html" target="_blank">English</a>
-        </p>
-        <script src="Langues/Interact.js"></script>
+<!--Official St-Ex color: #851129 -->
+<!--The website uses a darkened version of it-->
+<body id="body">
+	<nav class="choices">
+		<a onclick="transition('fr/sections.html?transition_direction=normal')">Français</a>
+		<div class="line_break"></div>
+		<!-- "&nbsp;" is an escape character for a whitespace -->
+		<span>&nbsp;/&nbsp;</span>
+		<a onclick="transition('en/sections.html?transition_direction=normal')">English</a>
+	</nav>
+	<div class="transition"></div>
+	<script src="transition.js"></script>
 </body>
 </html>
