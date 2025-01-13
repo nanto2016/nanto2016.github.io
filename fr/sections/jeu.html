@@ -18,97 +18,68 @@
 	<main class="content_container">
 		<h1>Description du jeu</h1>
 		<p>
-			Le jeu de cette année consiste, dans les grandes lignes, à prendre des disques imprimés en 3D venant des cheminées de distribution ou des distributeurs horizontaux (les disques en 3D seront appelés PJ dans cette section du site web) et les déposer ou les mettre soit dans des poteaux, poteaux inversés, un poteau horizontal ou une zone de curling dans le terrain.
+			Le jeu de cette année consiste, dans les grandes lignes, à prendre des disques en forme de beigne (appelés PJ) et les placer dans des « stations » pour gagner des points.
 		</p>
 		<p>
-			Il y a deux équipes : les bleus et les jaunes.
+			Il y a deux équipes : les bleus et les jaunes, chacune étant composée de deux robots.
 		</p>
 		<p>
-			Poser les PJ sur les stations rapporte des points et ces points peuvent déterminer quelle équipe gagne. Si une PJ se place sur un des poteaux présents sur le terrain rapporte 20 points tandis que le poteau inversé rapporte le double de ces points, par contre le poteau inversé possède une capacité de 12 PJ et le poteau peut posséder une capacité maximale variante, car deux des poteaux on une hauteur de 300 mm et les deux autres poteaux possèdent une hauteur de 150 mm. Une PJ placée dans le poteau horizontal de la couleur de l'équipe et 30 points par PJ vous seront attribués avec un nombre maximal de 8 PJ.
+			Les PJ se trouvent dans des distributeurs accessibles aux robots. Chaque station est unique dans la manière dont elle donne des points et la manière dont elle est « contrôlée ».
 		</p>
+		<details class="nice_border">
+			<summary>Contrôle des stations</summary>
+			<p>
+				Chaque station peut être contrôlée par une équipe, dépendamment des PJ qui y sont placées. Contrôler des stations peut être un avantage qui change complètement la donne—<i>mais il faut être stratégique.</i>
+			</p>
+			<p>
+				Le terrain est composé d'un ensemble de 9 stations formant une grille de tic-tac-toe. Contrôler 3 stations dans une ligne horizontale, verticale ou diagonnale multiplie les points de ces stations pour l'équipe les contrôlant.
+			</p>
+			<p>
+				Pour mieux comprendre les « Multiplicateurs TakTik-Toe », veuillez vous référer à <a href="/fr/sections/jeu.html#godot">l'explication intéractive du jeu</a>.
+			</p>
+		</details>
 		<p>
-			L'aire de curling a un poteau au centre et pour espérer marquer dans cette zone il faut placer une PJ dans le centre avec une capacité de 5 PJ maximale pour ce poteau. La première PJ placée dans ce poteau vaut 500 points, chaque autre PJ placée diminuera le score possible de 100 points et la cinquième place vaut 100 points. Après la cinquième PJ placée, les autres PJ se plaçant ne sont pas considérées. D'autres PJ peuvent être lancées sur l'aire de curling selon le pointage de cette zone. 
+			Il y a 3 types de stations:
 		</p>
-		<p>
-			Chaque station peut être contrôlée selon certaines conditions. 
-		</p>
-		<p>
-			Par exemple, les poteaux sont contrôlés selon la dernière PJ placée par l'équipe tandis que les poteaux inversés sont contrôlés selon la première PJ déposée. Les autres stations sont toutes généralement contrôlées par le plus de PJ placées sur la station par l'équipe. Tout cela aboutit vers les multiplicateurs. Si les stations créent une ligne horizontale, verticale ou une diagonale, un multiplicateur de 1,5 est attribué à l'équipe, mais si la station occupe deux lignes des multiplicateurs alors le score sera doublé. Chaque joute dure cinq minutes individuellement, donc chaque équipe doit créer une stratégie de jeu en fonction des règlements.
-		</p>
-		<p>
-			Prenons un moment pour parler des règles et des acteurs des joutes.
-		</p>
-		<p>
-			Les acteurs importants des joutes sont : le pilote et le co-pilote.
-		</p>
-
-		<ul id="roles">
-			<li>
-					Le pilote : il/elle a pour but de conduire le robot grâce au contrôleur, ressemblant à une manette de Xbox 360, PlayStation 3, PlayStation 4 ou Xbox One.
-			</li>
-			
-			<li>
-					Le co-pilote : il/elle a pour but d'assister le pilote dans sa joute.
-			</li>
-
-			<li>
-					Observateur : ils/elles peuvent regarder la joute et admirer le spectacle d'une joute.
-			</li>
+		<ul>
+			<li>Le poteau;</li>
+			<li>Le poteau inversé;</li>
+			<li>Le poteau horizontal;</li>
+			<li>Et l'aire de curling.</li>
 		</ul>
-			
 		<p>
-			Ces acteurs ne peuvent pas interagir avec le robot et si les observateurs interagissent avec eux, ils seront exclus de la salle de jeu.
-			
-			Enfin, nous allons aborder le règlement.
-			
-			Il y a plusieurs règlements en lien avec la joute, alors pour simplifier, nous allons résumer les règles.
-		</p>
-
-		<ol>
-			<li>
-					Le robot doit être identifié via le CRCsignal et son identification doit être visible par les officiels du jeu et la foule.
-			</li>
-
-			<li>
-					Si le robot est inactif, participe peu au pointage de son équipe ou il se brise; chaque 30 secondes créeront une pénalité de 10 %.
-			</li>
-
-			<li>
-					Si le membre de son équipe est seul dans une joute, il aura une multiplication de son score de 1,5.
-			</li>
-
-			<li>
-					Par la demande de l'équipe, un arbitre peut aider le robot avec une pénalité de 20 %, mais les officiels peuvent refuser l'aide.
-			</li>
-
-			<li>
-					Toute PJ lancée hors du terrain entraine une pénalité de 40 %. Un robot qui transporte plus de trois PJ donne une pénalité de 20 %. Ces pénalités s'appliquent sur le score d'une joute.
-			</li>
-
-			<li>
-					Si une pièce du robot part de celui-ci, l'équipe doit aller le chercher au CRCHub, mais s'il empêche la circulation sur le terrain, l'officiel du jeu l'enlève automatiquement de plus, l'accès au terrain est interdit pour les participants. 
-			</li>
-
-			<li>
-					15 minutes après la joute, l'équipe peut contester une décision avec une preuve vidéo, mais ils ne peuvent pas abuser de ce droit sous peine de ne pas l'avoir pour les autres fois.
-			</li>
-
-			<li>
-					Les comportements antisportifs tels que d'empêcher l'autre robot de jouer sa joute peut amener un balisage du score, les liquides se dispersant amènent à un pointage de zéro pour la joute. En somme, nuire à la sécurité ou avoir de l'irrespect envers les autres membres peut conduire à la réduction du score ou l'exclusion de la compétition.
-			</li>
-		</ol> 
-		
-		<p>
-			Avant d'arriver à la fin de cette section, nous  allons vers la structure du tournoi.
+			Pour mieux comprendre les différents types de stations, veuillez vous référer à <a href="/fr/sections/jeu.html#godot">l'explication intéractive du jeu</a>.
 		</p>
 		<p>
-			Le tournoi débutera avec les préliminaires, les quarts de finale et les demi-finales. Ceux n'avançant pas aux quarts de finale et les demi-finales auront leur chance dans les rondes préliminaires. Afin de terminer le tournoi et la compétition CRC de cette année, la finale aura lieu avec les deux meilleures équipes.
+			Malheureusement, l'explication intéractive ne couvre pas l'aire de curling, la station la plus cruciale du jeu.
 		</p>
+		<details class="nice_border details_with_images">
+			<summary>Aire de curling</summary>
+			<div>
+				<div class="text_with_image_sidebar">
+					<p>
+						L'aire de curling est à la fois la station la plus unique, la plus difficile à atteindre et la plus <i>payante.</i>
+					</p>
+					<p>
+						Elle est composée de 4 carrés concentriques et d'un poteau situé en son centre. Les robots ne sont pas authorisés à y entrer.
+					</p>
+					<p>
+						Les PJ lancés dans une des zone valent un certain nombre de points selon la zone: le plus près du centre, le plus de points. La première PJ lancée sur le poteau central vaut <b>500 POINTS</b>!!! Les suivantes valent de moins en moins de points: 400, 300, 200... jusqu'à 0.
+					</p>
+					<p>
+						L'aire de curling est contrôlée par l'équipe ayant le plus de PJ dans la zone ayant au moins une PJ la plus près du centre. Par exemple, si les jaunes on 5 PJ dans la zone de 10 points et que les bleus ont 1 PJ sur le poteau central, les bleus contrôle l'aire de curling. En cas d'égalité, personne ne la contrôle.
+					</p>
+				</div>
+				<aside class="sidebar_image">
+					<img src="/images/curling.png" alt="Aire de curling">
+					<img src="/images/curling control.png" alt="Exemple de contrôle de l'aire de curling">
+				</aside>
+			</div>
+		</details>
 		<p>
-			Pour terminer véritablement cette section, nous vous présentons un jeu interactif pour expliquer le mieux possible les composantes d'une joute du jeu de cette année.
+			Voici une explication intéractive du jeu de TakTik 2025 qui, nous l'espérons, vous aidera à mieux comprendre le jeu de l'année.
 		</p>
-
-		<a class="button_with_arrow" onclick="transition('../godot/godot.html?transition_direction=normal');">
+		<a id="godot" class="button_with_arrow" onclick="transition('../godot/godot.html?transition_direction=normal');">
 			Explication intéractive du jeu
 			<span class="arrow">></span>
 		</a>
