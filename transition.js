@@ -11,6 +11,7 @@ switch (search_params.get("transition_direction")) {
 }
 
 function transition(url) {
+	transition_div.style.display = "block";
 	transition_div.classList.add("transition_out");
 	setTimeout(function() {
 		location.href = url;
@@ -18,6 +19,7 @@ function transition(url) {
 }
 
 function transition_reverse(url) {
+	transition_div.style.display = "block";
 	transition_div.classList.add("transition_reverse_out");
 	setTimeout(function() {
 		location.href = url;
@@ -26,9 +28,12 @@ function transition_reverse(url) {
 
 function transition_unknown_direction(from, to, url) {
 	if (from <= to) {
-		console.log(url + "?transition_direction=normal")
 		transition(url + "?transition_direction=normal");
 	} else {
 		transition_reverse(url + "?transition_direction=reverse");
 	}
 }
+
+setTimeout(function() {
+	transition_div.style.display = "none";
+}, 1000);
