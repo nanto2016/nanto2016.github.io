@@ -51,16 +51,21 @@ h1.journey_title {
 blockquote {
 	margin-left: 0;
 	margin-right: 0;
+	font-style: italic;
 }
 
 .comic_grid {
 	background-color: black;
 	gap: 8px;
-	padding: 4px;
+	padding: 8px;
 	display: grid;
+	border: solid;
 	grid-template-areas: 
-		"september october october"
-		"kickoff   kickoff kickoff";
+		"september october  october"
+		"kickoff   kickoff  kickoff"
+		"november  december december"
+		"november  holidays holidays"
+		"january   january  january";
 }
 
 @media (orientation: portrait) {
@@ -75,20 +80,39 @@ blockquote {
 	padding: 16px;
 }
 
-.comic_cell > h2 {
-	text-align: center;
-}
-
 #september {
 	grid-area: september;
+	text-align: right;
 }
 
 #october {
 	grid-area: october;
+	text-align: left;
 }
 
 #kickoff {
 	grid-area: kickoff;
+	text-align: center;
+}
+
+#november {
+	grid-area: november;
+	text-align: center;
+}
+
+#december {
+	grid-area: december;
+	text-align: center;
+}
+
+#holidays {
+	grid-area: holidays;
+	text-align: center;
+}
+
+#january {
+	grid-area: january;
+	text-align: center;
 }
 
 #navbar {
@@ -147,13 +171,15 @@ header > img {
 
 .id_card {
 	background-image: url("/images/id_card.png");
-	aspect-ratio: 2 / 1;
+	aspect-ratio: 5 / 2;
 	background-size: 100% 100%;
 	background-color: black;
 	border: solid;
 	border-color: black;
 	border-radius: 4px;
+	text-align: center;
 }
+
 
 .grid_item > h2 {
 	font-size: 120%;
