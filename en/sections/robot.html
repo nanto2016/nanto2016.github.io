@@ -16,41 +16,55 @@
 	<nav id="navbar"></nav>
 	<script src="/en/navbar.js"></script>
 	<main class="content_container">
-		<h1>Le robot - Please translate to English!!!</h1>
+		<h1>The robot</h1>
+		<p>Internal document - Do not share outside the Industry.</p>
 		<hr>
-		<h2>Processus de conception</h2>
+		<h2>Design process</h2>
 		<p>
-			La conception du robot a commencé dans l'autobus en revenant du lancement de TakTik 2025. L'industrie Créative a établi plusieurs choses:
+			The robot's design process began on the bus ride back from the TakTik 2025 launch. The Creative Industry identified several key requirements for the robot:
 		</p>
 		<ol>
-			<li>Un système de ramassage des PJ est nécessaire;</li>
-			<li>Ce même système doit pouvoir placer des PJ dans les station autres que l'aire de curling;</li>
-			<li>Il faut que le robot puisse entreposer 3 PJ à la fois;</li>
-			<li>Le robot doit pouvoir lancer des PJ sur le poteau central.</li>
+			<li>A system is needed to pick up game pieces (GPs);</li>
+			<li>This system must be able to place GPs in stations outside the curling zone;</li>
+			<li>The robot must be able to store up to 3 GPs at the same time;</li>
+			<li>The robot must be capable of throwing GPs at the central pole.</li>
 		</ol>
 		<p>
-			Nous nous sommes mis d'accord sur le fait qu'une pince serait la manière la plus simple de ramasser des PJ et de les placer dans des stations. De plus, une pince à 3 étages nous permetterait d'entreposer 3 PJ à la fois et de toutes les placer dans une station en même temps!
+			We agreed that a claw would be the simplest way to pick up GPs and place them in stations. Additionally, a three-level claw should allow us to store 3 GPs at once and place them all in a station at the same time!
 		</p>
 		<img src="/images/pince.jpg" alt="Picture of a design for the claw">
 		<p>
-			Cependant, nous n'avions encore trouvé aucun moyen de lancer des PJ dans l'aire de curling. Après une rapide recherche, nous avons découvert que les lanceurs de frisbee font tourner une roue pour propulser les disques. Nous nous sommes inspirés de ce concept pour notre prototype de pince.
+			However, we still hadn't figured out how to throw GPs into the curling zone. After a quick search, we discovered that frisbee launchers use a spinning wheel to propel discs. This inspired the design for our claw prototype.
 		</p>
 		<p>
-			Seulement quelques jours après le lancement, nous avons fait une découverte: les limites d'extension des robots sont presque assez grandes pour permettre à un bras d'atteindre le poteau central... cela signifie que nous pourions facilement lancer des PJ sur le poteau central avec peu de mauvais lancers! Nous avons alors décidé de baser notre robot en entier sur cette stratégie.
+			A few days after the launch, we made an important discovery: the robot's extension limits are almost enough for an arm to reach the central pole. This means we could easily throw GPs at the central pole with minimal missed throws! We decided to base the entire robot strategy on this idea.
 		</p>
 		<p>
-			C'est à ce moment-là qu'est survenu notre premier problème: afin d'avoir un bras assez long pour se rapprocher au maximum du poteau central, il faut une base petite mais lourde et un bras très léger... et un moteur se trouvant au bout du bras, dans la pince, serait très lourd! Plusieurs solutions s'offraient à nous:
+			That's when we encountered our first problem: for the arm to be long enough to reach the central pole, we needed a small but heavy base and a very lightweight arm. However, placing a motor at the end of the arm, inside the claw, could make it too heavy! We considered several possible solutions:
 		</p>
 		<ul>
-			<li>Renforcer le bras et alourdir la base afin d'installer un moteur de puissance sur la pince (le bras pourrait-il supporter ce poids?);</li>
-			<li>Remplacer le moteur de puissance par un servomoteur plus léger avec un système d'aumentation de vitesse (le servomoteur tournerait-il assez vite?);</li>
-			<li>Placer le moteur sur la base du robot et transmettre la rotation à une roue située dans la pince (mais comment?);</li>
-			<li>Ou alors oublier le système de "lanceur de frisbee" et le remplacer par un système à ressort ou élastique (serait-ce possible à faire sans endommager les PJ et sans casser le bras avec le mouvement créé par le déclenchement du ressort?).</li>
+			<li>Strengthen the arm and make the base heavier to install a power motor in the claw (but could the arm handle the extra weight?);</li>
+			<li>Replace the power motor with a lighter servo motor and add a speed-increasing system (but would the servo motor spin fast enough?);</li>
+			<li>Place the motor on the robot's base and transfer the rotation to a wheel in the claw (but how?);</li>
+			<li>Abandon the “frisbee launcher” system and replace it with a spring or elastic mechanism (but could this work without damaging the GPs or breaking the arm due to the spring's release?).</li>
 		</ul>
 		<p>
 			Au moment de l'écriture de cet article, nous n'avons toujours pas trouvé de solution.
 		</p>
-		<h2>Version finale du robot</h2>
+		<h2>Final robot version</h2>
+		<p>
+			The robot has not benn built yet, so the concepts explained in this section may change before the competition.
+		</p>
+		<p>
+			The base uses mecanum wheels, which allow for omnidirectional movement. It is small, heavy, and sturdy to ensure stability when the arm extends.
+		</p>
+		<p>
+			The arm is made up of several strong yet lightweight 3D-printed parts, connected by servo motors that act as joints.
+		</p>
+		<p>
+			At the end of the arm is a claw capable of picking up 3 GPs at once. It is controlled by servo motors. Since the claw doesn't block the holes in the GPs, it can easily place them into stations. The claw is also equipped with a motor that spins fast enough to launch the bottom GP toward the central pole.
+		</p>
+		<img src="/images/pince 2.jpg" alt="Picture of a design for the claw">
 	</main>
 </body>
 </html>
